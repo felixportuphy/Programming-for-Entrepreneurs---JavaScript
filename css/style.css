@@ -1,0 +1,324 @@
+body {
+    font-family: helvetica;
+}
+
+#header {
+    display:flex;
+    justify-content:space-around;
+    position:fixed;
+  
+    background:transparent;
+    width:100%;
+    z-index:100;
+    padding:2rem;
+   
+  
+   
+  
+}
+
+#header:hover {
+   
+     background-color:black;
+     opacity:0.4;
+}
+
+
+#header h1 {
+    vertical-align: middle;
+    color: white;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.nav{
+   display:flex;
+  justify-content: center;
+    list-style:none;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-size:1.5rem;
+    padding-left:1rem;
+    color:white;
+}
+
+
+.welcome{
+    
+  
+    background-image: url("../images/dating_website.jpg");
+    background-size:cover;
+    background-position: center center;
+    height:27rem;
+   
+}
+.row {
+    margin:0px 20px 10px 20px;
+    padding-top:1rem;
+   
+}
+
+.row label{
+    font-size:1.5rem;
+   
+}
+
+.card{
+    width:25%;
+    height:60%;
+    background-color:transparent rgba(105,237,247);
+    padding:2rem 1rem;
+    border:1.7px solid white;
+    position: relative;
+    top:23%;
+    left:70%;
+    z-index:10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.card:hover{
+ 
+    background-color:white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30);
+    transition:background-color 0.6s;
+}
+
+.card label{
+    color:white;
+}
+
+
+.card:hover.card label{
+ color:black;
+}
+
+#searchBtn:hover{
+   background-color:black;
+   color:white;
+}
+
+
+.card-inputs{
+    height:25px;
+}
+
+
+
+
+.age-range label:first-child{
+    margin-right:8px;
+}
+
+
+
+
+
+.age-input{
+    width:40px;
+   
+}
+
+#searchBtn{
+    width:75%;
+    padding:0.4rem;
+    font-size:1.1rem;
+    font-weight:bold;
+    border:none;
+    border-radius:3px;
+    margin-left:30px;
+}
+
+#main-content{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    padding:1rem;
+    
+    column-gap:2rem;
+   
+    
+}
+
+
+#results {
+    border:1.5px solid rgb(160, 156, 156);
+    padding:1rem 3rem;
+    overflow-y: scroll;
+}
+
+.ads{
+    
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    column-gap:0.5rem;
+    padding:1rem 2rem;
+    height:70%;
+}
+
+.ads-wrapper{
+    padding:5rem 2rem;
+    text-align:center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-radius:8px;
+    background-image:url("../images/image4.jpg");
+    background-size:cover;
+
+}
+
+.ads-wrapper-text{
+    border-top:1.5px solid white;
+    border-left:1.5px solid white;
+    border-right:1.5px solid white;
+    border-bottom:1.5px solid white;
+    border-left-width:50%;
+    border-right-width:50%;
+    padding:5rem;
+    margin-top:3rem;
+}
+
+
+.ads-wrapper .heads{
+    text-transform: uppercase;
+    color:white;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+
+.ads-wrapper .leads{
+    margin-top:1rem;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+
+
+.invites-ads{
+    padding:2rem 1rem;
+    /* border:1px solid black; */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+
+
+.invite{
+    padding:2rem 0;
+    /* border:1px solid black; */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+
+.invite .heads{
+    font-size:1.8rem;
+    padding-bottom:0.2rem;
+    color:#D61B25;
+  
+}
+
+
+.invite .leads{
+    font-size:1rem;
+    padding:0.5rem 1rem;
+  
+}
+
+
+.invite .heads:nth-child(2){
+    font-size:1.5rem;
+    color:black;
+  
+}
+
+
+
+
+.aux{
+    padding:2rem;
+    margin-top:10px;
+    /* border:1px solid black; */
+    background-color:#D61B25;
+    border-left:5px solid black;
+    color:white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+.footer{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-radius:4px;
+    margin-top:1rem;
+    padding:4rem 2rem;
+    grid-column:1/3;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding:0rem 2rem;
+}
+
+
+.footer-content ul li{
+   padding-bottom:0.5rem;
+   font-size:1rem;
+}
+
+.footer .sites{
+    padding:1rem 2rem;
+    padding-bottom:0rem;
+    margin-top:3rem;
+    border-top:1px solid black;
+}
+
+.person-row {
+    margin: 10px 0px 0px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background-color:#D61B25;
+    width:80%;
+    height:4rem;
+    float: left;
+}
+
+.person-row img {
+    float: left;
+    margin-right: 20px;
+}
+
+.personal-info {
+    float: left;
+}
+
+.person-row > button {
+   float: right; 
+}
+
+.add-btn{
+    background-color:white;
+    font-size:0.9rem;
+    font-weight:bold;
+    border:1px solid black;
+    padding:0.3rem;
+    border-radius:3px;
+}
+
+
+.add-btn:hover{
+    background-color:black;
+    color:white;
+    transition:0.6s;
+   
+}
+
+.add-btn:active{
+    background-color:rgb(20, 201, 14);
+    color:white;
+    transition:none;
+    
+   
+}
+
